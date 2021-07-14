@@ -74,8 +74,6 @@ a {
   align-items: center;
 }
 
-.image {
-}
 /* all player cards */
 
 .flex-container,
@@ -172,6 +170,19 @@ a {
   background-color: #f0a202;
 }
 
+/* youtube video style */
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 1120px;
+  height: 630px;
+}
+
 /* footer design */
 
 .logo img {
@@ -239,5 +250,20 @@ a {
   }
   .watch-live {
     margin-top: 27px;
+  }
+  .highlights {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clock-body {
+    grid-template-columns: repeat(1, 230px);
+  }
+
+  iframe {
+    width: 560px;
+    height: 315px;
   }
 }
