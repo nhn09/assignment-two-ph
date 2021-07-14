@@ -11,6 +11,12 @@
   background-color: #ffffff;
 }
 
+/* all anchor style */
+
+a {
+  text-decoration: none;
+}
+
 /* header design  */
 
 .header-objects {
@@ -19,9 +25,14 @@
   background-color: #2d25a0;
 }
 
+.header-objects:hover .image {
+  transform: translateX(200px);
+  transition: transform ease-in-out 3s;
+}
 .image img {
   width: 556px;
   height: 438px;
+  position: relative;
 }
 
 .text-and-image {
@@ -42,6 +53,25 @@
   height: 44px;
   width: 168px;
   background: #e02c6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 27px;
+}
+
+.watch-live a {
+  color: white;
+}
+
+.fa-arrow-right {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
@@ -94,7 +124,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
+  margin: 70px;
 }
 .clock-body {
   display: grid;
@@ -109,9 +139,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 60px;
+  font-size: 70px;
 }
 
+.clock-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 30px;
+}
 .span-style {
   color: #ef2f3c;
 }
@@ -148,6 +183,10 @@
   margin: 20px;
   font-size: 17.07px;
 }
+
+.footer {
+  margin: 63px 0;
+}
 /* .fa-instagram, .fa-dribbble , . */
 .copy-right {
   font-size: 18px;
@@ -173,5 +212,32 @@
   .players {
     grid-template-columns: 330px;
     grid-template-rows: repeat(9, 474px);
+  }
+  .text-and-image {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    grid-gap: 50px;
+  }
+
+  .header-objects {
+    height: 695px;
+    padding: 33px 16px 0 16px;
+  }
+
+  .image img {
+    width: 329px;
+    height: 259px;
+    position: relative;
+    margin: 0 20px 63 px 20px;
+  }
+
+  .text {
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0;
+  }
+  .watch-live {
+    margin-top: 27px;
   }
 }
