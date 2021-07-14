@@ -89,6 +89,7 @@ a {
   grid-column-gap: 30px;
   grid-template-rows: repeat(3, 474px);
   grid-row-gap: 27px;
+  margin-top: 70px;
 }
 .player-card {
   padding: 15px 15px 33px 15px;
